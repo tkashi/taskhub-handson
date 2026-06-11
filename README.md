@@ -6,14 +6,14 @@ Claude Code ワークショップの練習用リポジトリです。
 
 ## セットアップ
 
-Node.js 20 以上が必要です。
+Node.js 20 以上と pnpm が必要です(pnpm 未導入なら `corepack enable pnpm`)。
 
 ```bash
-npm install
-npm test        # テスト実行(初期状態で全部通ります)
-npm run lint    # ESLint
-npm run typecheck
-npm run dev     # http://localhost:3000 で API を起動
+pnpm install
+pnpm test        # テスト実行(初期状態で全部通ります)
+pnpm lint        # ESLint
+pnpm typecheck
+pnpm dev         # http://localhost:3000 で API を起動
 ```
 
 ## API の使い方
@@ -75,7 +75,7 @@ HTTP (src/main.ts)
 |---|---|
 | 演習 1: CLAUDE.md / Rules | **CLAUDE.md は意図的に置いていません。** `/init` で生成し、テストコマンドと規約(例:「ストアを直接触らずリポジトリ経由」)を追記する |
 | 演習 2: Plan Mode 調査 | 「`GET /tasks` のリクエストが入ってからレスポンスを返すまでに通るファイルと関数を順番に調査して」を Plan Mode で依頼する |
-| 演習 3: 完了条件つき修正 | [ISSUES.md](./ISSUES.md) の #1〜#3 から 1 つ選び、「再現テスト追加 + `npm test` / `npm run lint` が通る」を完了条件に修正を任せる |
+| 演習 3: 完了条件つき修正 | [ISSUES.md](./ISSUES.md) の #1〜#3 から 1 つ選び、「再現テスト追加 + `pnpm test` / `pnpm lint` が通る」を完了条件に修正を任せる |
 | 次回(並列・マルチエージェント編) | ISSUES.md の #4 以降を使う |
 
 > 注意: このリポジトリのコードは教材です。バグの場所をコード中のコメントで
