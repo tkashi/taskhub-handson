@@ -1,0 +1,6 @@
+{
+  "server.started": "TaskHub API がポート {port} で起動しました",
+  "error.unauthorized": "認証に失敗しました",
+  "error.notFound": "リソースが見つかりません",
+  "error.tooManyRequests": "リクエストが多すぎます。しばらく待って再試行してください"
+}
