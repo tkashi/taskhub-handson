@@ -4,6 +4,18 @@ Claude Code ワークショップの練習用リポジトリです。
 小さなタスク管理 API(TypeScript / 外部ランタイム依存なし)で、
 **意図的なバグや未整備な箇所が含まれています**(バグ票は [ISSUES.md](./ISSUES.md))。
 
+## 自分用のコピーを作る(推奨)
+
+このリポジトリは GitHub の **Template repository** です。
+push や PR 作成の演習を自由にできるよう、自分のリポジトリとしてコピーして使ってください。
+
+1. GitHub 上で **Use this template → Create a new repository** を押し、
+   自分のアカウントにリポジトリを作る(名前はそのままで OK)
+2. 作ったリポジトリを clone して演習に使う
+
+> GitHub が使えない環境の場合は、このリポジトリを直接 clone(または zip 取得)でも
+> ほとんどの演習はそのままできます。**PR 作成のステップだけスキップ**してください。
+
 ## セットアップ
 
 Node.js 20 以上と pnpm が必要です(pnpm 未導入なら `corepack enable pnpm`)。
@@ -73,7 +85,7 @@ HTTP (src/main.ts)
 
 | 演習 | このリポジトリでやること |
 |---|---|
-| 演習 1: CLAUDE.md / Rules | **CLAUDE.md は意図的に置いていません。** `/init` で生成し、テストコマンドと規約(例:「ストアを直接触らずリポジトリ経由」)を追記する |
+| 演習 1: CLAUDE.md / Rules | **CLAUDE.md は意図的に置いていません。** `/init` で生成し、テストコマンドと規約(例:「ストアを直接触らずリポジトリ経由」)を追記する。パススコープ付き rules の書式例は `.claude/rules/tests.md` を参照 |
 | 演習 2: Plan Mode 調査 | 「`GET /tasks` のリクエストが入ってからレスポンスを返すまでに通るファイルと関数を順番に調査して」を Plan Mode で依頼する |
 | 演習 3: 完了条件つき修正 | [ISSUES.md](./ISSUES.md) の #1〜#3 から 1 つ選び、「再現テスト追加 + `pnpm test` / `pnpm lint` が通る」を完了条件に修正を任せる |
 | 次回(並列・マルチエージェント編) | ISSUES.md の #4 以降を使う |
